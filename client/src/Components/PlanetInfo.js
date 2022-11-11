@@ -1,7 +1,9 @@
 import React from "react";
 import "./PlanetInfo.css";
 
-const PlanetInfo = () => {
+const PlanetInfo = ({ planets }) => {
+  const selectPlanet = planets.map((planet) => {});
+
   return (
     <div className="planet-info">
       <h2>Planet Name</h2>
