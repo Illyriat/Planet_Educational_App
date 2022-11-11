@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import PlanetList from "../Components/PlanetList";
 import Header from "../Components/Header";
 import CarouselComponent from "../Components/CarouselComponent";
+import Planet from "../Components/Planet";
 
 const PlanetContainer = () => {
   const [allPlanets, setAllPlanets] = useState([]);
@@ -19,6 +20,7 @@ const PlanetContainer = () => {
     <>
       <Header />
       <CarouselComponent />
+      <Planet planets={allPlanets} />
       <PlanetList allPlanets={allPlanets} />
     </>
   );
