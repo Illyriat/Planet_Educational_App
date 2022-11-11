@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import CarouselComponent from "../Components/CarouselComponent";
-import PlanetInfo from "../Components/PlanetInfo";
+import PlanetList from "../Components/PlanetList";
 import Header from "../Components/Header";
+import CarouselComponent from "../Components/CarouselComponent";
 
 const PlanetContainer = () => {
-  const [planets, setPlanets] = useState([]);
+  const [allPlanets, setAllPlanets] = useState([]);
 
   const fetchPlanets = () => {
     fetch("http://localhost:9000/api/planets")
       .then((response) => response.json())
-      .then((planets) => setPlanets(planets));
+      .then((data) => setAllPlanets(data));
   };
   useEffect(() => {
     fetchPlanets();
@@ -19,7 +19,7 @@ const PlanetContainer = () => {
     <>
       <Header />
       <CarouselComponent />
-      <PlanetInfo planets={planets} />
+      <PlanetList allPlanets={allPlanets} />
     </>
   );
 };
