@@ -15,7 +15,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 1,
-        "img": "",
+        "img": "../images/earth.jpg",
         "fun_fact": ""
       },
     {
@@ -30,7 +30,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
-        "img": "",
+        "img": "../images/venus.jpg",
         "fun_fact": ""
       },
     {
@@ -45,7 +45,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 14,
-        "img": "",
+        "img": "../images/neptune.jpg",
         "fun_fact": ""
       },
     {
@@ -75,7 +75,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 27,
-        "img": "",
+        "img": "../images/uranus.jpg",
         "fun_fact": ""
       },
     {
@@ -90,7 +90,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 80,
-        "img": "",
+        "img": "../images/jupiter.jpg",
         "fun_fact": ""
       },
     {
@@ -105,7 +105,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 2,
-        "img": "",
+        "img": "../images/mars.jpg",
         "fun_fact": ""
       },
     {
@@ -120,7 +120,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 83,
-        "img": "",
+        "img": "../images/saturn.jpg",
         "fun_fact": ""
       },
     {
@@ -135,7 +135,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
-        "img": "",
+        "img": "../images/Mercury.jpg",
         "fun_fact": ""
       }
 ]);
