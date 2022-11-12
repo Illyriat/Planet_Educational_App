@@ -19,17 +19,19 @@ const PlanetContainer = () => {
   }, []);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/slideshow"
-          element={<CarouselComponent allPlanets={allPlanets} />}
-        />
-        {/* <Planet planets={allPlanets} />
-        <PlanetList allPlanets={allPlanets} /> */}
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/slideshow"
+            element={<CarouselComponent allPlanets={allPlanets} />}
+          />
+        </Routes>
+      </Router>
+      {/* <Planet planets={allPlanets} /> */}
+      {/* <PlanetList allPlanets={allPlanets} /> */}
+    </>
   );
 };
 
