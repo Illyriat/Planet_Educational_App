@@ -16,7 +16,8 @@ db.planetInfo.insertMany([
         "body_type": "Planet",
         "satellites": 1,
         "img": "",
-        "fun_fact": ""
+        "fun_facts": [{"Fact Number 1":"Earth is the only place we know of so far that is inhabited by living things"},
+        {"Fact Number 2":"It is also the only planet in our solar system with liquid water on the surface."}]
       },
     {
         "name": "Venus",
@@ -136,6 +137,6 @@ db.planetInfo.insertMany([
         "body_type": "Planet",
         "satellites": 0,
         "img": "",
-        "fun_fact": ""
+        "fun_fact": ["The smallest planet in our solar system and closest to the Sun"]
       }
 ]);
