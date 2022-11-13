@@ -15,7 +15,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 1,
-        "img": "",
+        "img": "Planet_Educational_App/client/src/images/earth.jpg",
         "fun_facts": [
         {"Fact number 1":"Earth is the only place we know of so far that is inhabited by living things"},
         {"Fact number 2":"It is also the only planet in our solar system with liquid water on the surface."}, 
