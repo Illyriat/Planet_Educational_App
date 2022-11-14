@@ -1,26 +1,26 @@
-import React from "react";
-import Planet from "./Planet";
+// import React from "react";
+// import Planet from "./Planet";
 
-const PlanetList = ({ allPlanets }) => {
-  return (
-    <>
-      {allPlanets.map((planet) => {
-        return (
-          <Planet
-            key={planet._id}
-            name={planet.name}
-            mass={planet.mass}
-            radius={planet.radius}
-            period={planet.period}
-            satellites={planet.satellites}
-          />
-        );
-      })}
-    </>
-  );
-};
+// const PlanetList = ({ allPlanets }) => {
+//   return (
+//     <>
+//       {allPlanets.map((planet) => {
+//         return (
+//           <Planet
+//             key={planet._id}
+//             name={planet.name}
+//             mass={planet.mass}
+//             radius={planet.radius}
+//             period={planet.period}
+//             satellites={planet.satellites}
+//           />
+//         );
+//       })}
+//     </>
+//   );
+// };
 
-export default PlanetList;
+// export default PlanetList;
 
 
 //BEFORE----------------------------------------->>>>

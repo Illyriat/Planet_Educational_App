@@ -7,11 +7,16 @@ const PlanetContainer = () => {
   const [allPlanets, setAllPlanets] = useState([]);
   // const [allMissions, setAllMissions] = useState([]);
 
+  async function fetchPlanets() {
+    const response = await fetch("http://localhost:9000/api/planets");
+    const data = await response.json();
+    setAllPlanets(data);
+  
 
-  const fetchPlanets = () => {
-    fetch("http://localhost:9000/api/planets")
-      .then((response) => response.json())
-      .then((data) => setAllPlanets(data));
+  // const fetchPlanets = () => {
+  //   fetch("http://localhost:9000/api/planets")
+  //     .then((response) => response.json())
+  //     .then((data) => setAllPlanets(data));
 
   // const fetchMissions = () => {
   //   fetch("https://api.le-systeme-solaire.net/rest/bodies/")
