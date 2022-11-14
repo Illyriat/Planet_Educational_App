@@ -3,7 +3,7 @@ import "./Planet.css";
 
 const Planet = ({ name, mass, radius, period, fun_facts }) => {
   return (
-    <div className="planet-info">
+    <div className="planet-details">
       <h2>{name}</h2>
       <p>
         Description about the planet to go here. Maybe a link to another page

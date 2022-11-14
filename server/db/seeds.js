@@ -15,7 +15,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 1,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/earth.jpg?raw=true",
         "fun_facts": [
         {"Fact number 1":"Earth is the only place we know of so far that is inhabited by living things"},
         {"Fact number 2":"It is also the only planet in our solar system with liquid water on the surface."}, 
@@ -23,7 +22,8 @@ db.planetInfo.insertMany([
         {"Fact number 4":"Earth’s atmosphere is made of gases. The mixture of gases, what we often refer to as ‘air’, are nitrogen, oxygen, argon, and carbon dioxide. Without them, we couldn’t live." },
         {"Fact number 5":"You could fit a million Earths in the Sun "},
         {"Fact number 6": "Earth isn’t perfectly round. Earth may look round but it’s actually not perfectly round. The planet bulges around the equator by an extra 0.3 percent due to how it rotates about its axis."}
-      ]
+      ],
+        "img": "earth.jpg",
       },
     {
         "name": "Venus",
@@ -37,7 +37,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/venus.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Venus spins slowly in the opposite direction from most planets."},
         {"Fact number 2":"A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system."}, 
@@ -45,7 +44,9 @@ db.planetInfo.insertMany([
         {"Fact number 4":"Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure you’d encounter a mile below the ocean on Earth. That means if you stood on it you’d be crushed. That’s if the heat didn’t get to you first." },
         {"Fact number 5":"A day on Venus lasts 243 Earth Days "},
         {"Fact number 6": "You can see Venus at night. Venus is the third brightest natural object in the night sky after the Moon and The Sun."}
-      ]
+      ],
+
+        "img": "venus.jpg",
       },
     {
         "name": "Neptune",
@@ -59,7 +60,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 14,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/neptune.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Neptune is an ‘Ice Giant’  . Is dark, cold and whipped by supersonic winds."},
         {"Fact number 2":"It is he eighth and most distant major planet orbiting our Sun. Neptune is more than 30 times as far from the Sun as Earth"}, 
@@ -69,7 +69,9 @@ db.planetInfo.insertMany([
         {"Fact number 6": "There are arguments over who discovered Neptune The first person to have seen Neptune was likely Galileo. In one of his drawings we see Neptune labelled as a star. However because he didn’t recognise that it was a planet he didn’t get credit for discovering it. That credit goes to 2 mathematicians. French mathematician Urbain Le Verrier and the English mathematician John Couch Adams. They both predicted that a new planet – known as Planet X– would be discovered in a specific region of the sky."},
         {"Fact number 7": "Neptune has 14 moons."},
         {"Fact number 8":"Neptune is made up of methane – the same gas that makes up some of our trumps. The type of methane on Neptune gives it its blue colour."}
-      ]
+      ],
+
+        "img": "neptune.jpg",
       },
     {
         "name": "Pluto",
@@ -83,7 +85,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 5,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/pluto.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Pluto is a Dwarf Planet. Dwarf planets are smaller than planets. The first three objects classified as dwarf planets were Pluto, Eris, and Ceres."},
         {"Fact number 2":"Pluto was considered a planet until 2006. In August 2006 the International Astronomical Union (IAU) downgraded the status of Pluto from planet to “dwarf planet."}, 
@@ -93,7 +94,8 @@ db.planetInfo.insertMany([
         {"Fact number 6": "A year on Pluto is 248 Earth years."},
         {"Fact number 7": "Pluto has 5 moons"}, 
         {"Fact number 8": "Pluto is very far from the Sun so it’s super cold. In facts it’s -228 to -238 C, which is too cold for humans to live there."}
-      ]
+      ],
+        "img": "pluto.jpg",
       },
      {
         "name": "Uranus",
@@ -107,7 +109,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 27,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/uranus.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Uranus is the seventh planet from the Sun"},
         {"Fact number 2":"It rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."}, 
@@ -116,7 +117,9 @@ db.planetInfo.insertMany([
         {"Fact number 5":"Uranus is an ‘Ice Giant’."},
         {"Fact number 6": "Uranus has 13 rings."},
         {"Fact number 7": "Uranus’ Moons are named after Shakespeare characters. These names include Titania from A Midsummer Night’s Dream, Prospero from The Tempest and Cordelia from King Lear"}
-      ]
+      ],
+
+        "img": "uranus.jpg",
       },
     {
         "name": "Jupiter",
@@ -130,7 +133,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 80,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/jupiter.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Jupiter is more than twice as massive than the other planets of our solar system combined."},
         {"Fact number 2":"The giant planet's Great Red spot is a centuries-old storm bigger than Earth."}, 
@@ -141,7 +143,9 @@ db.planetInfo.insertMany([
         {"Fact number 7":"A year on Jupiter is the same as 11.8 Earth years."},
         {"Fact number 8":"One day on Jupiter goes by in just 10 hours."},
         {"Fact number 9":"Jupiter is the third brightest object in the Solar System, after Venus and the Moon."}
-      ]
+      ],
+
+        "img": "jupiter.jpg",
       },
     {
         "name": "Mars",
@@ -155,7 +159,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 2,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/mars.jpg?raw=true",
         "fun_fact": [
           {"Fact number 1":"There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere."},
         {"Fact number 2":"Mars is a dusty, cold, desert world with a very thin atmosphere."}, 
@@ -165,7 +168,9 @@ db.planetInfo.insertMany([
         {"Fact number 6": "Mars has 4 seasons like Earth. And that’s not where the similarities end. Like Earth, Mars has polar ice caps, volcanoes, canyons, and weather."},
         {"Fact number 7": "Mars is about half the size of Earth."},
         {"Fact number 8": "Mars has the highest mountain in our solar system. Mars is home to the highest mountain in our solar system. It’s a volcano called Olympus Mons. It’s about three times the height of Mount Everest, the highest mountain on Earth."}
-      ]
+      ],
+
+        "img": "mars.jpg",
       },
     {
         "name": "Saturn",
@@ -179,7 +184,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 83,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/saturn.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Saturn is the sixth planet from the Sun."},
         {"Fact number 2":"Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system."}, 
@@ -189,7 +193,9 @@ db.planetInfo.insertMany([
         {"Fact number 6": "It’s very windy on Saturn.Winds around the equator of Saturn can be 1,800 kilometres per hour. On Earth the fastest ever recorded wind was 407 kilometres per hour."},
         {"Fact number 7": "Saturn has more moons than any other planet in the Solar System. It has 82 confirmed moons."},
         {"Fact number 8": "A day on Saturn is only 10.7 hours and a year is 29 Earth years."}
-      ]
+      ],
+
+        "img": "saturn.jpg",
       },
     {
         "name": "Mercury",
@@ -203,7 +209,6 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
-        "img": "https://github.com/Illyriat/Planet_Educational_App/blob/5b233242b2c9c0ebd76065475ff822b9202fc2fd/client/src/images/Mercury.jpg?raw=true",
         "fun_fact": [
         {"Fact number 1":"Mercury is the smallest planet in our solar system and closest to the Sun"},
         {"Fact number 2":"It is only slightly larger than Earth's Moon."}, 
@@ -212,6 +217,8 @@ db.planetInfo.insertMany([
         {"Fact number 5":"Mercury has been visited by two spacecraft – Mariner 10 and MESSENGER."},
         {"Fact number 6": "Mercury’s surface has ice on it."}, 
         {"Fact number 7": "Mercury is named after a Roman God."}
-      ]
+      ],
+
+        "img": "Mercury.jpg",
       }
 ]);
