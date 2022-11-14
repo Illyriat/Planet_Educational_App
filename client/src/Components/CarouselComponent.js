@@ -1,61 +1,73 @@
-import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Planet from "./Planet";
-import Venus from "../images/venus.jpg";
-import Mercury from "../images/Mercury.jpg";
-import Earth from "../images/earth.jpg";
-import Mars from "../images/mars.jpg";
-import Jupiter from "../images/jupiter.jpg";
-import Neptune from "../images/neptune.jpg";
-import Uranus from "../images/uranus.jpg";
-import Saturn from "../images/saturn.jpg";
+import React, { useState } from "react";
+import Header from "../Components/Header";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import "./CarouselComponent.css";
 
-// Somehow turn this into a list with the data stored in each carousel item
-// Could return Carousel Item
-function CarouselComponent() {
+const Imageslider = ({ allPlanets }) => {
+  const [current, setCurrent] = useState(0);
+  const length = allPlanets.length;
+
+  const nextSlide = () => {
+    //if current = last item in the array set back to 0 else add 1
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    //if current planet is 0 set length to minus 1 else add 1
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  //if there is no data return null or data is not an array.
+  if (!Array.isArray(allPlanets) || allPlanets.length <= 0) {
+    return null;
+  }
+
   return (
-    <Carousel className="carousel-container" interval={null}>
-      <Carousel.Item>
-        <img className="d-block w-100" src={Mercury} alt="First slide" />
-        <Planet />
-      </Carousel.Item>
+    <>
+      <Header />
+      <section className="slider">
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        {allPlanets.map((planet, index) => {
+          return (
+            <>
+              <div
+                className={index === current ? "slide active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <>
+                    <img
+                      src={require("../images/" + planet.img)}
+                      alt=""
+                      className="image"
+                    />
+                    <div key={planet._id} className="planet-info">
+                      <h2>{planet.name}</h2>
+                      <p>Mass:</p>
+                      <h3>{planet.mass}</h3>
 
-      <Carousel.Item>
-        <img className="d-block w-100" src={Venus} alt="Second slide" />
-        <Planet />
-      </Carousel.Item>
+                      <p>radius:</p>
+                      <h3>{planet.radius}</h3>
 
-      <Carousel.Item>
-        <img className="d-block w-100" src={Earth} alt="Third slide" />
-        <Planet />
-      </Carousel.Item>
+                      <p>period:</p>
+                      <h3>{planet.period} days</h3>
 
-      <Carousel.Item>
-        <img className="d-block w-100" src={Mars} alt="Third slide" />
-        <Planet />
-      </Carousel.Item>
+                      <p>temperature:</p>
+                      <h3>{planet.temperature}</h3>
 
-      <Carousel.Item>
-        <img className="d-block w-100" src={Jupiter} alt="Third slide" />
-        <Planet />
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img className="d-block w-100" src={Saturn} alt="Third slide" />
-        <Planet />
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img className="d-block w-100" src={Uranus} alt="Third slide" />
-        <Planet />
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img className="d-block w-100" src={Neptune} alt="Third slide" />
-        <Planet />
-      </Carousel.Item>
-    </Carousel>
+                      <p>satellites:</p>
+                      <h3>{planet.satellites}</h3>
+                    </div>
+                  </>
+                )}
+              </div>
+            </>
+          );
+        })}
+      </section>
+    </>
   );
-}
+};
 
-export default CarouselComponent;
+export default Imageslider;

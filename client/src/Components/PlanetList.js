@@ -7,7 +7,7 @@ const PlanetList = ({ allPlanets }) => {
       {allPlanets.map((planet) => {
         return (
           <Planet
-            key={planet.id}
+            key={planet._id}
             name={planet.name}
             mass={planet.mass}
             radius={planet.radius}
