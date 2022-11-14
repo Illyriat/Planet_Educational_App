@@ -10,6 +10,7 @@ import Neptune from "../images/neptune.jpg";
 import Uranus from "../images/uranus.jpg";
 import Saturn from "../images/saturn.jpg";
 
+
 // Somehow turn this into a list with the data stored in each carousel item
 // Could return Carousel Item
 function CarouselComponent() {
