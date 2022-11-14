@@ -5,6 +5,7 @@ db.dropDatabase();
 db.planetInfo.insertMany([
     {
         "name": "Earth",
+        "description": "Our home planet—is the only place we know of so far that's inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.",
         "mass": 0.00315,
         "radius": 0.0892,
         "period": 365.2,
@@ -27,6 +28,7 @@ db.planetInfo.insertMany([
       },
     {
         "name": "Venus",
+        "description": "Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.",
         "mass": 0.00257,
         "radius": 0.0847,
         "period": 224.7,
@@ -50,6 +52,7 @@ db.planetInfo.insertMany([
       },
     {
         "name": "Neptune",
+        "description": "The eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope.",
         "mass": 0.0537,
         "radius": 0.346,
         "period": 59800,
@@ -61,20 +64,21 @@ db.planetInfo.insertMany([
         "body_type": "Planet",
         "satellites": 14,
         "fun_fact": [
-        {"Fact number 1":"Neptune is an ‘Ice Giant’  . Is dark, cold and whipped by supersonic winds."},
+        {"Fact number 1":"Neptune is an 'Ice Giant'. Is dark, cold and whipped by supersonic winds."},
         {"Fact number 2":"It is he eighth and most distant major planet orbiting our Sun. Neptune is more than 30 times as far from the Sun as Earth"}, 
         {"Fact number 3":"It was the first planet located through mathematical calculations, rather than by telescope."}, 
         {"Fact number 4":"Neptune has at least 5 rings." },
         {"Fact number 5":"A year on Neptune is equivalent to 164.81 Earth Years"},
-        {"Fact number 6": "There are arguments over who discovered Neptune The first person to have seen Neptune was likely Galileo. In one of his drawings we see Neptune labelled as a star. However because he didn’t recognise that it was a planet he didn’t get credit for discovering it. That credit goes to 2 mathematicians. French mathematician Urbain Le Verrier and the English mathematician John Couch Adams. They both predicted that a new planet – known as Planet X– would be discovered in a specific region of the sky."},
+        {"Fact number 6": "There are arguments over who discovered Neptune The first person to have seen Neptune was likely Galileo. In one of his drawings we see Neptune labelled as a star. However because he didn't recognise that it was a planet he didn't get credit for discovering it. That credit goes to 2 mathematicians. French mathematician Urbain Le Verrier and the English mathematician John Couch Adams. They both predicted that a new planet – known as Planet X would be discovered in a specific region of the sky."},
         {"Fact number 7": "Neptune has 14 moons."},
-        {"Fact number 8":"Neptune is made up of methane – the same gas that makes up some of our trumps. The type of methane on Neptune gives it its blue colour."}
+        {"Fact number 8":"Neptune is made up of methane - the same gas that makes up some of our trumps. The type of methane on Neptune gives it its blue colour."}
       ],
 
         "img": "neptune.jpg",
       },
     {
         "name": "Pluto",
+        "description": "Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the largest member of the Kuiper Belt and the best known of a new class of worlds called dwarf planets.",
         "mass": 0.000007,
         "radius": 0.0166,
         "period": 90560,
@@ -87,18 +91,19 @@ db.planetInfo.insertMany([
         "satellites": 5,
         "fun_fact": [
         {"Fact number 1":"Pluto is a Dwarf Planet. Dwarf planets are smaller than planets. The first three objects classified as dwarf planets were Pluto, Eris, and Ceres."},
-        {"Fact number 2":"Pluto was considered a planet until 2006. In August 2006 the International Astronomical Union (IAU) downgraded the status of Pluto from planet to “dwarf planet."}, 
+        {"Fact number 2":"Pluto was considered a planet until 2006. In August 2006 the International Astronomical Union (IAU) downgraded the status of Pluto from planet to “dwarf planet."}, 
         {"Fact number 3":"Pluto lies in the Kuiper Belt. The Kuiper Belt is a donut-shaped region of icy bodies beyond the orbit of Neptune. This is where Pluto can be found."},  
         {"Fact number 4":"Pluto is smaller than the Moon."},
-        {"Fact number 5":"Pluto is the only place other than Earth in our solar system that has white-peaked mountains, but these white caps aren’t made of snow. Instead, they’re made of methane frost."},
+        {"Fact number 5":"Pluto is the only place other than Earth in our solar system that has white-peaked mountains, but these white caps aren’t made of snow. Instead, they're made of methane frost."},
         {"Fact number 6": "A year on Pluto is 248 Earth years."},
         {"Fact number 7": "Pluto has 5 moons"}, 
-        {"Fact number 8": "Pluto is very far from the Sun so it’s super cold. In facts it’s -228 to -238 C, which is too cold for humans to live there."}
+        {"Fact number 8": "Pluto is very far from the Sun so it’s super cold. In facts it's -228 to -238 C, which is too cold for humans to live there."}
       ],
         "img": "pluto.jpg",
       },
      {
         "name": "Uranus",
+        "description": "Seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.",
         "mass": 0.0457,
         "radius": 0.358,
         "period": 30589,
@@ -114,15 +119,16 @@ db.planetInfo.insertMany([
         {"Fact number 2":"It rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."}, 
         {"Fact number 3":"It was the first planet to be discovered through a telescope."}, 
         {"Fact number 4":"You could fit 63 Earths inside Uranus." },
-        {"Fact number 5":"Uranus is an ‘Ice Giant’."},
+        {"Fact number 5":"Uranus is an 'Ice Giant'."},
         {"Fact number 6": "Uranus has 13 rings."},
-        {"Fact number 7": "Uranus’ Moons are named after Shakespeare characters. These names include Titania from A Midsummer Night’s Dream, Prospero from The Tempest and Cordelia from King Lear"}
+        {"Fact number 7": "Uranus' Moons are named after Shakespeare characters. These names include Titania from A Midsummer Night's Dream, Prospero from The Tempest and Cordelia from King Lear"}
       ],
 
         "img": "uranus.jpg",
       },
     {
         "name": "Jupiter",
+        "description": "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth",
         "mass": 1,
         "radius": 1,
         "period": 4331,
@@ -149,6 +155,7 @@ db.planetInfo.insertMany([
       },
     {
         "name": "Mars",
+        "description": "Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere.",
         "mass": 0.000338,
         "radius": 0.0488,
         "period": 687,
@@ -174,6 +181,7 @@ db.planetInfo.insertMany([
       },
     {
         "name": "Saturn",
+        "description": "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.",
         "mass": 0.299,
         "radius": 0.843,
         "period": 10747,
@@ -199,6 +207,7 @@ db.planetInfo.insertMany([
       },
     {
         "name": "Mercury",
+        "description": "the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days",
         "mass": 0.000174,
         "radius": 0.0341,
         "period": 88,

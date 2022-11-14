@@ -1,7 +1,13 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import Header from "../Components/Header";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./CarouselComponent.css";
+
+const PlanetTitle = styled.h1`
+  font-size: 4rem;
+  border-bottom: 2px solid #fff;
+`;
 
 const Imageslider = ({ allPlanets }) => {
   const [current, setCurrent] = useState(0);
@@ -25,6 +31,7 @@ const Imageslider = ({ allPlanets }) => {
   return (
     <>
       <Header />
+
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
@@ -43,7 +50,10 @@ const Imageslider = ({ allPlanets }) => {
                       className="image"
                     />
                     <div key={planet._id} className="planet-info">
-                      <h2>{planet.name}</h2>
+                      <PlanetTitle>{planet.name}</PlanetTitle>
+
+                      <h4>{planet.description}</h4>
+
                       <p>Mass:</p>
                       <h3>{planet.mass}</h3>
 
@@ -58,6 +68,7 @@ const Imageslider = ({ allPlanets }) => {
 
                       <p>satellites:</p>
                       <h3>{planet.satellites}</h3>
+                      <button value="More Info">More Info</button>
                     </div>
                   </>
                 )}
