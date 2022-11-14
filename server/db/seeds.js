@@ -15,6 +15,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 1,
+
         "fun_facts": [
         {"Fact number 1":"Earth is the only place we know of so far that is inhabited by living things"},
         {"Fact number 2":"It is also the only planet in our solar system with liquid water on the surface."}, 
@@ -37,6 +38,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
+
         "fun_fact": [
         {"Fact number 1":"Venus spins slowly in the opposite direction from most planets."},
         {"Fact number 2":"A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system."}, 
@@ -60,6 +62,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 14,
+
         "fun_fact": [
         {"Fact number 1":"Neptune is an ‘Ice Giant’  . Is dark, cold and whipped by supersonic winds."},
         {"Fact number 2":"It is he eighth and most distant major planet orbiting our Sun. Neptune is more than 30 times as far from the Sun as Earth"}, 
@@ -72,6 +75,7 @@ db.planetInfo.insertMany([
       ],
 
         "img": "neptune.jpg",
+
       },
     {
         "name": "Pluto",
@@ -109,6 +113,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 27,
+
         "fun_fact": [
         {"Fact number 1":"Uranus is the seventh planet from the Sun"},
         {"Fact number 2":"It rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."}, 
@@ -120,6 +125,7 @@ db.planetInfo.insertMany([
       ],
 
         "img": "uranus.jpg",
+
       },
     {
         "name": "Jupiter",
@@ -133,6 +139,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 80,
+
         "fun_fact": [
         {"Fact number 1":"Jupiter is more than twice as massive than the other planets of our solar system combined."},
         {"Fact number 2":"The giant planet's Great Red spot is a centuries-old storm bigger than Earth."}, 
@@ -145,6 +152,7 @@ db.planetInfo.insertMany([
         {"Fact number 9":"Jupiter is the third brightest object in the Solar System, after Venus and the Moon."}
       ],
         "img": "jupiter.jpg",
+
       },
     {
         "name": "Mars",
@@ -158,6 +166,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 2,
+
         "fun_fact": [
           {"Fact number 1":"There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere."},
         {"Fact number 2":"Mars is a dusty, cold, desert world with a very thin atmosphere."}, 
@@ -170,6 +179,7 @@ db.planetInfo.insertMany([
       ],
 
         "img": "mars.jpg",
+
       },
     {
         "name": "Saturn",
@@ -183,6 +193,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 83,
+
         "fun_fact": [
         {"Fact number 1":"Saturn is the sixth planet from the Sun."},
         {"Fact number 2":"Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system."}, 
@@ -195,6 +206,7 @@ db.planetInfo.insertMany([
       ],
 
         "img": "saturn.jpg",
+
       },
     {
         "name": "Mercury",
@@ -208,6 +220,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
+
         "fun_fact": [
         {"Fact number 1":"Mercury is the smallest planet in our solar system and closest to the Sun"},
         {"Fact number 2":"It is only slightly larger than Earth's Moon."}, 
@@ -219,5 +232,6 @@ db.planetInfo.insertMany([
       ],
 
         "img": "Mercury.jpg",
+
       }
 ]);

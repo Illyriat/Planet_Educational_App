@@ -12,6 +12,7 @@ const PlanetList = ({ allPlanets }) => {
             mass={planet.mass}
             radius={planet.radius}
             period={planet.period}
+            satellites={planet.satellites}
           />
         );
       })}
