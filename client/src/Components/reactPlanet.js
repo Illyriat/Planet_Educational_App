@@ -11,7 +11,7 @@ export function MyPlanet() {
                             height: 100,
                             width: 100,
                             borderRadius: '50%',
-                            backgroundColor: '#1da8a4',
+                            backgroundColor: '#516BEB',
                         }}
                     />
                 }
@@ -23,7 +23,7 @@ export function MyPlanet() {
                         height: 70,
                         width: 70,
                         borderRadius: '50%',
-                        backgroundColor: '#9257ad',
+                        backgroundColor: '#84DFFF',
                     }}
                 />
                 <div
@@ -31,7 +31,7 @@ export function MyPlanet() {
                         height: 70,
                         width: 70,
                         borderRadius: '50%',
-                        backgroundColor: '#9257ad',
+                        backgroundColor: '#84DFFF',
                     }}
                 />
             </Planet>

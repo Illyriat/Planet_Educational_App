@@ -106,7 +106,7 @@ const Imageslider = ({ allPlanets }) => {
                       <h3>{planet.satellites}</h3>
                       <button value="More Info">More Info</button>               
                       <button onClick={handleClick}>Generate Fact</button>
-                      <FunFactCard factData={factData} />
+                      <FunFactCard key={index} factData={factData} />
                     </div>
                   
                   </>
