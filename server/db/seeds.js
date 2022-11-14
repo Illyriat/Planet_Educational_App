@@ -15,7 +15,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 1,
-        "img": "",
+        "img": "earth.jpg",
         "fun_fact": ""
       },
     {
@@ -30,7 +30,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
-        "img": "",
+        "img": "venus.jpg",
         "fun_fact": ""
       },
     {
@@ -45,7 +45,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 14,
-        "img": "",
+        "img": "neptune.jpg",
         "fun_fact": ""
       },
     {
@@ -60,7 +60,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 5,
-        "img": "",
+        "img": "pluto.jpg",
         "fun_fact": ""
       },
      {
@@ -75,7 +75,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 27,
-        "img": "",
+        "img": "uranus.jpg",
         "fun_fact": ""
       },
     {
@@ -90,7 +90,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 80,
-        "img": "",
+        "img": "jupiter.jpg",
         "fun_fact": ""
       },
     {
@@ -105,7 +105,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 2,
-        "img": "",
+        "img": "mars.jpg",
         "fun_fact": ""
       },
     {
@@ -120,7 +120,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 83,
-        "img": "",
+        "img": "saturn.jpg",
         "fun_fact": ""
       },
     {
@@ -135,7 +135,7 @@ db.planetInfo.insertMany([
         "host_star_temperature": 6000,
         "body_type": "Planet",
         "satellites": 0,
-        "img": "",
+        "img": "Mercury.jpg",
         "fun_fact": ""
       }
 ]);

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../Components/Home";
 import CarouselComponent from "../Components/CarouselComponent";
-import NavBar from "../Components/Navbar";
 import PlanetList from "../Components/PlanetList";
 import Planet from "../Components/Planet";
 
@@ -29,8 +28,9 @@ const PlanetContainer = () => {
           />
         </Routes>
       </Router>
-      {/* <Planet planets={allPlanets} /> */}
-      {/* <PlanetList allPlanets={allPlanets} /> */}
+
+      {/* <Planet planets={allPlanets} />
+      <PlanetList allPlanets={allPlanets} /> */}
     </>
   );
 };

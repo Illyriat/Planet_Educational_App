@@ -29,6 +29,15 @@ const Home = () => {
     <>
       <Header />
       <HomeContainer>
+        {/* <div>
+          <iframe
+            title="xtxt"
+            src="https://solarsystem.nasa.gov/gltf_embed/2364"
+            width="100%"
+            height="450px"
+            frameborder="0"
+          />
+        </div> */}
         <img src={logo} className="App-logo" alt="logo" />
         <HomeTitle>Explore the Solar System</HomeTitle>
         <HomeSubTitle>Take a tour through the galaxy</HomeSubTitle>

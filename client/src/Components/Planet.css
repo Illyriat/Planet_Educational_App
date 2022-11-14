@@ -1,4 +1,4 @@
-.planet-info {
+/* .planet-details {
   width: 300px;
   height: 600px;
   background-color: white;
@@ -13,8 +13,8 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .planet-info {
+  .planet-details {
     position: relative;
     width: 80%;
-  }
-}
+  } */
+/* } */
