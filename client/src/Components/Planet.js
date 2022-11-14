@@ -1,9 +1,11 @@
 import React from "react";
 import "./Planet.css";
 
+
 const Planet = ({ name, mass, radius, period, fun_fact, satellites}) => {
+
   return (
-    <div className="planet-info">
+    <div className="planet-details">
       <h2>{name}</h2>
       <h4>Description</h4>
       <h6>{fun_fact}</h6>
@@ -15,7 +17,8 @@ const Planet = ({ name, mass, radius, period, fun_fact, satellites}) => {
       <hr></hr>
       <h4>Radius:{radius}</h4>
       <h4>Satellites:{satellites}</h4>
-      
+      <hr></hr>
+      <h4>Fun Facts:{fun_facts}</h4>
     </div>
   );
 };
