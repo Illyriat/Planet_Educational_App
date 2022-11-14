@@ -144,7 +144,6 @@ db.planetInfo.insertMany([
         {"Fact number 8":"One day on Jupiter goes by in just 10 hours."},
         {"Fact number 9":"Jupiter is the third brightest object in the Solar System, after Venus and the Moon."}
       ],
-
         "img": "jupiter.jpg",
       },
     {
