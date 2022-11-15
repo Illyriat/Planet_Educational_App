@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Info = styled.div`
   position: absolute;
-  top: 40%;
+  top: 10%;
   right: 10%;
   color: white;
 `;

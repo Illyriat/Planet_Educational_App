@@ -8,7 +8,7 @@
   color: #fff;
   z-index: 2;
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 5%;
   padding: 2rem;
   width: 18rem;
@@ -23,7 +23,6 @@
 
 .image {
   width: 100%;
-  height: 80;
 }
 
 .right-arrow {
@@ -58,14 +57,26 @@
   transition-duration: 2s;
 }
 
+@media screen and (max-width: 1300px) {
+  .planet-info {
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .planet-info {
+    width: 30rem;
+    position: relative;
+    display: flex;
+  }
+  .right-arrow {
+    top: 25%;
+  }
+  .left-arrow {
+    top: 25%;
+  }
+}
 @media screen and (max-width: 600px) {
   .planet-info {
     position: relative;
-  }
-  .right-arrow {
-    top: 20%;
-  }
-  .left-arrow {
-    top: 20%;
   }
 }

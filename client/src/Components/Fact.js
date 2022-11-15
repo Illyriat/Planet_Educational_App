@@ -5,11 +5,12 @@ const RandomFact = styled.div`
   border: 2px solid white;
   height: 14rem;
   width: 14rem;
-  position: absolute;
-  top: 10%;
-  right: 7%;
+  /* position: absolute;
+  bottom: 5%;
+  left: 5%; */
   color: white;
   padding: 2rem;
+  margin-top: 2rem;
 `;
 
 const Fact = () => {

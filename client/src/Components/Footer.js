@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <BottomFooter>
       <p>
-        Copyright &copy; Raquel Revelles, James Dawson, Benjamin Rew and Steven
+        Copyright &copy; Raquel Revelles, James Robson, Benjamin Rew and Steven
         Perry
       </p>
     </BottomFooter>

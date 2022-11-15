@@ -14,6 +14,10 @@ const PlanetTitle = styled.h1`
   padding-bottom: 1.5rem;
 `;
 
+const Description = styled.p`
+  font-size: 1.2rem;
+`;
+
 const Imageslider = ({ allPlanets }) => {
   const [current, setCurrent] = useState(0);
   const length = allPlanets.length;
@@ -55,9 +59,12 @@ const Imageslider = ({ allPlanets }) => {
                       className="image"
                     />
                     <div key={planet._id} className="planet-info">
-                      <PlanetTitle>{planet.name}</PlanetTitle>
-                      <h4>{planet.description}</h4>
-                      <button value="More Info">More Info</button>
+                      <div>
+                        <PlanetTitle>{planet.name}</PlanetTitle>
+                        <Description>{planet.description}</Description>
+                        <button value="More Info">More Info</button>
+                      </div>
+                      <Fact />
                     </div>
                   </>
                 )}
@@ -69,7 +76,6 @@ const Imageslider = ({ allPlanets }) => {
                   satellites={planet.satellites}
                 />
               </div>
-              <Fact />
             </>
           );
         })}
