@@ -5,22 +5,17 @@
 }
 
 .planet-info {
-  color: #000;
-  background-color: #fff;
-  border-radius: 3rem;
-  opacity: 0.7;
+  color: #fff;
   z-index: 2;
   position: absolute;
-  top: 25%;
-  left: 10%;
-  padding: 3rem;
-  width: 10rem;
-  height: 30rem;
+  top: 2%;
+  left: 5%;
+  padding: 2rem;
+  width: 18rem;
 }
 
 .slider {
   position: relative;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +55,28 @@
 .slide.active {
   opacity: 1;
   transition-duration: 2s;
+}
+
+@media screen and (max-width: 1300px) {
+  .planet-info {
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .planet-info {
+    width: 30rem;
+    position: relative;
+    display: flex;
+  }
+  .right-arrow {
+    top: 25%;
+  }
+  .left-arrow {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .planet-info {
+    position: relative;
+  }
 }

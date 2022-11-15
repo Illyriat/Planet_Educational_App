@@ -5,19 +5,19 @@ import CarouselComponent from "../Components/CarouselComponent";
 
 const PlanetContainer = () => {
   const [allPlanets, setAllPlanets] = useState([]);
-  // const [allMissions, setAllMissions] = useState([]);
 
+  // const [allMissions, setAllMissions] = useState([]);
 
   const fetchPlanets = () => {
     fetch("http://localhost:9000/api/planets")
       .then((response) => response.json())
       .then((data) => setAllPlanets(data));
 
-  // const fetchMissions = () => {
-  //   fetch("https://api.le-systeme-solaire.net/rest/bodies/")
-  //     .then((response) => response.json())
-  //     .then((data) => setAllMissions(data));
-    
+    // const fetchMissions = () => {
+    //   fetch("https://api.le-systeme-solaire.net/rest/bodies/")
+
+    //     .then((response) => response.json())
+    //     .then((data) => setAllMissions(data));
   };
 
   useEffect(() => {
@@ -36,9 +36,8 @@ const PlanetContainer = () => {
           />
         </Routes>
       </Router>
-
     </>
   );
-}
+};
 
 export default PlanetContainer;

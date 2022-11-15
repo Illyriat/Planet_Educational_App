@@ -1,7 +1,22 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import Fact from "../Components/Fact";
+import InfoPanel from "../Components/InfoPanel";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./CarouselComponent.css";
+
+const PlanetTitle = styled.h1`
+  font-size: 4rem;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+`;
+
+const Description = styled.p`
+  font-size: 1.2rem;
+`;
 
 const Imageslider = ({ allPlanets }) => {
   const [current, setCurrent] = useState(0);
@@ -25,6 +40,7 @@ const Imageslider = ({ allPlanets }) => {
   return (
     <>
       <Header />
+
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
@@ -43,29 +59,28 @@ const Imageslider = ({ allPlanets }) => {
                       className="image"
                     />
                     <div key={planet._id} className="planet-info">
-                      <h2>{planet.name}</h2>
-                      <p>Mass:</p>
-                      <h3>{planet.mass}</h3>
-
-                      <p>radius:</p>
-                      <h3>{planet.radius}</h3>
-
-                      <p>period:</p>
-                      <h3>{planet.period} days</h3>
-
-                      <p>temperature:</p>
-                      <h3>{planet.temperature}</h3>
-
-                      <p>satellites:</p>
-                      <h3>{planet.satellites}</h3>
+                      <div>
+                        <PlanetTitle>{planet.name}</PlanetTitle>
+                        <Description>{planet.description}</Description>
+                        <button value="More Info">More Info</button>
+                      </div>
+                      <Fact />
                     </div>
                   </>
                 )}
+                <InfoPanel
+                  mass={planet.mass}
+                  temp={planet.temperature}
+                  radius={planet.radius}
+                  days={planet.period}
+                  satellites={planet.satellites}
+                />
               </div>
             </>
           );
         })}
       </section>
+      <Footer />
     </>
   );
 };
