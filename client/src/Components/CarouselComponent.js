@@ -64,7 +64,7 @@ const Imageslider = ({ allPlanets }) => {
                         <Description>{planet.description}</Description>
                         <button value="More Info">More Info</button>
                       </div>
-                      <Fact />
+                      <Fact facts={planet.fun_fact} />
                     </div>
                   </>
                 )}
