@@ -27,6 +27,9 @@ const NavBar = () => {
       <ListItem>
         <StyledLink to="/slideshow">Planetarium</StyledLink>
       </ListItem>
+      <ListItem>
+        <StyledLink to="/adddata">Add Data</StyledLink>
+      </ListItem>
     </NavList>
   );
 };
