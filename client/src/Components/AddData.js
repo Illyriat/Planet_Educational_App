@@ -23,7 +23,7 @@ const AddData = ({addPlanet}) => {
     });
 
     const onChange = (evt) =>{
-        const newPlanetData = object.assign({}, planetData);
+        const newPlanetData = Object.assign({}, planetData);
         newPlanetData[evt.target.name] = evt.target.value;
         setPlanetData(newPlanetData);
     }
