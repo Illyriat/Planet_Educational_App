@@ -1,6 +1,5 @@
 import React from "react";
 import "./SolarsysFooter.css";
-import PlanetList from "./PlanetList";
 
 
 const SolarsysFooter = ({allPlanets}) => {

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../Components/Home";
 import CarouselComponent from "../Components/CarouselComponent";
+import MoreInfo from "../Components/MoreInfoComponent";
 
 const PlanetContainer = () => {
   const [allPlanets, setAllPlanets] = useState([]);
@@ -34,6 +35,7 @@ const PlanetContainer = () => {
             path="/slideshow"
             element={<CarouselComponent allPlanets={allPlanets} />}
           />
+          <Route path="/moreinfo" element={<MoreInfo/>} />
         </Routes>
       </Router>
 

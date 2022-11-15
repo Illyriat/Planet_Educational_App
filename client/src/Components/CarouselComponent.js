@@ -58,14 +58,16 @@ const Imageslider = ({ allPlanets }) => {
 
                       <p>satellites:</p>
                       <h3>{planet.satellites}</h3>
+                      <button className="button" text={'More Info'}/>
                     </div>
                   </>
                 )}
               </div>
-            </>
+          </>
           );
         })}
       </section>
+      
     </>
   );
 };
