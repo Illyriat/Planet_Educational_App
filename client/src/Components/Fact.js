@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const RandomFact = styled.div`
@@ -13,12 +13,19 @@ const RandomFact = styled.div`
   margin-top: 2rem;
 `;
 
-const Fact = () => {
+const Fact = ({ facts }) => {
+  const [index, setIndex] = useState(0);
+
+  const generateFact = () => {
+    const factNum = Math.floor(Math.random() * facts.length);
+    setIndex(factNum);
+  };
+
   return (
     <RandomFact>
       <h1>Fact</h1>
-      <p>Some random fact will go in here</p>
-      <button value="More Info">More Facts</button>
+      <p>{facts[index]}</p>
+      <button onClick={generateFact}>New Fact</button>
     </RandomFact>
   );
 };
