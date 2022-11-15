@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Footer from './Footer';
 import { postPlanetData } from './AddDataService';
 import './AddData.css';
+import swal from 'sweetalert';
 
 const AddData = ({addPlanet}) => {
 
@@ -44,10 +45,16 @@ const AddData = ({addPlanet}) => {
                 distance_light_year: "",
                 host_star_mass: "",
                 host_star_temperature: "",
-                body_type: "",
+                body_type: "Choose a Body Type",
                 satellites: "",
                 img: "",
                 fun_fact: []
+            });
+            swal({
+                title: "Success!",
+                text: "Thank you! Your submission has been added to the data base",
+                icon: "success",
+                button: "Continue",
             });
         })
        
@@ -59,7 +66,7 @@ const AddData = ({addPlanet}) => {
         <>
             <Header />
 
-            <form onSubmit={onSubmit} id="planet-form" >
+            <form onSubmit={onSubmit} id="planet-form" method="POST" action="/success/">
                 <h2 className="add-title-data">Add a Planet: </h2>
                 <div className="formwarp">
                     <label htmlFor="name" className='data-text'>Name: </label>
@@ -162,8 +169,8 @@ const AddData = ({addPlanet}) => {
 
                 <div className='formwarp'>
                     <label htmlFor='multi_select' className='data-text'>Body Type: </label>
-                    <select name = "dropdown">
-                        <option value = "Planet" selected>Planet</option>
+                    <select onChange={onChange} name = "body_type" defaultValue={planetData.body_type}>
+                        <option value = "Planet">Planet</option>
                         <option value = "Dwarf_Planet">Dwarf Planet</option>
                         <option value = "Moon">Moon</option>
                         <option value = "Astriod">Astriod</option>
@@ -204,7 +211,7 @@ const AddData = ({addPlanet}) => {
                     />
                 </div>
 
-                <input type="submit" value="Save" id="save"/>
+                <input type="submit" value="Save" id="save" action="/success/" />
             </form>
             
             <Footer />
