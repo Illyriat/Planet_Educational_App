@@ -24,8 +24,11 @@ const NavBar = () => {
       <ListItem>
         <StyledLink to="/">Home</StyledLink>
       </ListItem>
-      <ListItem>
+      {/* <ListItem>
         <StyledLink to="/slideshow">Planetarium</StyledLink>
+      </ListItem> */}
+      <ListItem>
+        <StyledLink to="/testslideshow">Planetarium</StyledLink>
       </ListItem>
       <ListItem>
         <StyledLink to="/adddata">Add Data</StyledLink>
