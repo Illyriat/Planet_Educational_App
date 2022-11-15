@@ -25,7 +25,7 @@ const NavBar = () => {
         <StyledLink to="/">Home</StyledLink>
       </ListItem>
       <ListItem>
-        <StyledLink to="/slideshow">slideshow</StyledLink>
+        <StyledLink to="/slideshow">Planetarium</StyledLink>
       </ListItem>
     </NavList>
   );

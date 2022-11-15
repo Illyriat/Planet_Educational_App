@@ -1,16 +1,21 @@
 import React from "react";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 import styled from "styled-components";
 import logo from "../images/solar_system.svg";
+import bgimg from "../images/home_page_img.jpg";
 
 const HomeContainer = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: white;
+  background-image: url(${bgimg});
+  background-position: center;
+  background-size: cover;
 `;
 
 const HomeTitle = styled.h4`
@@ -32,6 +37,7 @@ const Home = () => {
         <HomeTitle>Explore the Solar System</HomeTitle>
         <HomeSubTitle>Take a tour through the galaxy</HomeSubTitle>
       </HomeContainer>
+      <Footer />
     </>
   );
 };

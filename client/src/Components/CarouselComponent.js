@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import Fact from "../Components/Fact";
+import InfoPanel from "../Components/InfoPanel";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./CarouselComponent.css";
 
 const PlanetTitle = styled.h1`
   font-size: 4rem;
   border-bottom: 2px solid #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
 `;
 
 const Imageslider = ({ allPlanets }) => {
@@ -51,32 +56,25 @@ const Imageslider = ({ allPlanets }) => {
                     />
                     <div key={planet._id} className="planet-info">
                       <PlanetTitle>{planet.name}</PlanetTitle>
-
                       <h4>{planet.description}</h4>
-
-                      <p>Mass:</p>
-                      <h3>{planet.mass}</h3>
-
-                      <p>radius:</p>
-                      <h3>{planet.radius}</h3>
-
-                      <p>period:</p>
-                      <h3>{planet.period} days</h3>
-
-                      <p>temperature:</p>
-                      <h3>{planet.temperature}</h3>
-
-                      <p>satellites:</p>
-                      <h3>{planet.satellites}</h3>
                       <button value="More Info">More Info</button>
                     </div>
                   </>
                 )}
+                <InfoPanel
+                  mass={planet.mass}
+                  temp={planet.temperature}
+                  radius={planet.radius}
+                  days={planet.period}
+                  satellites={planet.satellites}
+                />
               </div>
+              <Fact />
             </>
           );
         })}
       </section>
+      <Footer />
     </>
   );
 };
