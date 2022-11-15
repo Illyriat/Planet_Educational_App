@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../Components/Home";
 import CarouselComponent from "../Components/CarouselComponent";
 import AddData from "../Components/AddData";
+import MoreInfoComponent from "../Components/MoreInfoComponent";
 
 const PlanetContainer = () => {
   const [allPlanets, setAllPlanets] = useState([]);
@@ -36,6 +37,8 @@ const PlanetContainer = () => {
             element={<CarouselComponent allPlanets={allPlanets} />}
           />
           <Route path="/adddata" element={<AddData />} />
+          <Route path="/moreinfo" element={<MoreInfoComponent />} />
+
         </Routes>
       </Router>
     </>

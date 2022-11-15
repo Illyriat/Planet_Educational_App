@@ -1,6 +1,7 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../Components/Header";
 import "./CarouselComponent.css";
+
 
 
 
@@ -9,16 +10,13 @@ const MoreInfo = () => {
     <>
     <Header/>
         <div class="container">
-            <h1>{}</h1>
-            <div class="gallery">
-                <img src="" alt="" />
-            </div>
-            <div class="gallery">
-                <img src="" alt="" />
-            </div>
-            <div>
-            <section><iframe src='https://solarsystem.nasa.gov/gltf_embed/2387' width='100%' height='450px' frameborder='0' />Section</section>
-            </div>
+            <h1>Saturn</h1>
+            
+            <iframe src='https://solarsystem.nasa.gov/gltf_embed/2354' width='35%' height='450px' frameborder='0' />
+            
+            
+            <iframe src='https://solarsystem.nasa.gov/gltf_embed/2347' width='35%' height='450px' frameborder='0' />
+            
         </div>
     </>    
         
