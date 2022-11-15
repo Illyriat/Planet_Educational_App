@@ -23,7 +23,7 @@ const AddData = ({addPlanet}) => {
     });
 
     const onChange = (evt) =>{
-        const newPlanetData = object.assign({}, planetData);
+        const newPlanetData = Object.assign({}, planetData);
         newPlanetData[evt.target.name] = evt.target.value;
         setPlanetData(newPlanetData);
     }
@@ -75,7 +75,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="mass" className='data-text'>Mass: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="mass"
                     name="mass"
@@ -86,7 +86,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="radius" className='data-text'>Radius: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="radius"
                     name="radius"
@@ -97,7 +97,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="period" className='data-text'>Orbital Period: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="period"
                     name="period"
@@ -108,7 +108,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="semi_major_axis" className='data-text'>Axis: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="semi_major_axis"
                     name="semi_major_axis"
@@ -119,7 +119,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="temperature" className='data-text'>Temperature: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="temperature"
                     name="temperature"
@@ -130,7 +130,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="distance_light_years" className='data-text'>Distance In Light Years: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="distance_light_years"
                     name="distance_light_years"
@@ -141,7 +141,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="host_star_mass" className='data-text'>Host Star Mass: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="host_star_mass"
                     name="host_star_mass"
@@ -152,7 +152,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="host_star_temperature" className='data-text'>Host Star Temperature: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="host_star_temperature"
                     name="host_star_temperature"
@@ -174,7 +174,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="satellites" className='data-text'>Satellites: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="satellites"
                     name="satellites"
@@ -185,7 +185,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="img" className='data-text'>Add a link to an image here: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="img"
                     name="img"
@@ -196,7 +196,7 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="fun_facts" className='data-text'>Tell us a fun fact!: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="fun_facts"
                     name="fun_facts"
