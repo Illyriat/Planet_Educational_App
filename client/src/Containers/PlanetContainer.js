@@ -4,6 +4,7 @@ import Home from "../Components/Home";
 import CarouselComponent from "../Components/CarouselComponent";
 import SlideShow from "../Components/SlideShow";
 import AddData from "../Components/AddData";
+import MoreInfoComponent from "../Components/MoreInfoComponent";
 import MoreInfo from "../Components/MoreInfoComponent";
 
 const PlanetContainer = () => {
