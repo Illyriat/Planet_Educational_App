@@ -66,7 +66,7 @@ const AddData = ({addPlanet}) => {
         <>
             <Header />
 
-            <form onSubmit={onSubmit} id="planet-form" method="POST" action="/success/">
+            <form onSubmit={onSubmit} id="planet-form" method="POST" action="/success/" className='planet-form'>
                 <h2 className="add-title-data">Add a Planet: </h2>
                 <div className="formwarp">
                     <label htmlFor="name" className='data-text'>Name: </label>

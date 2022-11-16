@@ -1,17 +1,26 @@
+.planet-form {
+    padding-top: 1rem;
+    padding-left: 10rem;
+    padding-bottom: 30.5%;
+}
+
+
 .add-title-data {
     color: white;
     text-align: center;
+    padding-bottom: 5rem;
 }
+
 
 .data-text {
     color: white;
-    left: 2%;
 }
 
+
 .text-box {
-    size: 30rem;
-    left: 2%;
+    
 }
+
 
 .fact-box {
     align-items: center;
