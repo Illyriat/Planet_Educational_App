@@ -42,7 +42,7 @@ const PlanetContainer = () => {
             element={<SlideShow allPlanets={allPlanets} />}
           />
           <Route path="/adddata" element={<AddData />} />
-          <Route path="/moreinfo" element={<MoreInfo />} />
+          <Route path="/moreinfo" element={<MoreInfoComponent />} />
         </Routes>
       </Router>
     </>
