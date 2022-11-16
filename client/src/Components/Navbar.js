@@ -34,7 +34,7 @@ const NavBar = () => {
         <StyledLink to="/adddata">Add Data</StyledLink>
       </ListItem>
       <ListItem>
-        <StyledLink to="/moreinfocomponent">More Info</StyledLink>
+        <StyledLink to="/moreinfo">More Info</StyledLink>
       </ListItem>
     </NavList>
   );
