@@ -3,21 +3,29 @@ import Header from "../Components/Header";
 import "./CarouselComponent.css";
 import styled from "styled-components";
 
-const Moondata = styled.div`
-  font-family: quicksand;
-  padding: 10px;
+const MoonHeader = styled.div`
   color: white;
-  border: 1px solid white;
-  width: 30%;
-  max-width: 200px;
-  min-width: 200px;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  width: 20rem;
+  margin: 3rem auto 2rem;
+  text-align: center;
+`;
+
+const Moondata = styled.div`
+  padding: 2rem;
+  color: white;
+  border: 2px solid white;
+  width: 25rem;
+  min-width: 10rem;
 `;
 
 const Flexcontainer = styled.div`
   padding: 10px;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
 `;
 
@@ -25,15 +33,14 @@ const MoreInfo = () => {
   return (
     <>
       <Header />
-      <h1>Saturns Moons</h1>
+      <MoonHeader>Saturns Moons</MoonHeader>
       <Flexcontainer>
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2354"
             title="moon"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
           />
           <h2>Rhea</h2>
           <p>
@@ -43,19 +50,13 @@ const MoreInfo = () => {
             largest moon, Titan. Rhea is a small, cold, airless body that is
             very similar to sister moons Dione and Tethys.
           </p>
-          <input
-            type="button"
-            onclick=" href='https://en.wikipedia.org/wiki/Rhea_(moon)';"
-            value="info"
-          />
         </Moondata>
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2391"
-            width="30%"
+            width="100%"
             title="moon"
-            height="30%"
-            frameborder="0"
+            frameBorder="0"
           />
           <h2>Dione</h2>
           <p>
@@ -71,9 +72,8 @@ const MoreInfo = () => {
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2347"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
             title="moon"
           />
           <h2>Titan</h2>
@@ -90,9 +90,8 @@ const MoreInfo = () => {
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2368"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
             title="moon"
           />
           <h2>Mimas</h2>
@@ -114,9 +113,8 @@ const MoreInfo = () => {
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2381"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
             title="moon"
           />
           <h2>Lapetus</h2>
@@ -139,9 +137,8 @@ const MoreInfo = () => {
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2347"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
             title="moon"
           />
           <h2>Tethys</h2>
@@ -161,9 +158,8 @@ const MoreInfo = () => {
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2382"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
             title="moon"
           />
           <h2>Hyperion</h2>
@@ -179,9 +175,8 @@ const MoreInfo = () => {
         <Moondata>
           <iframe
             src="https://solarsystem.nasa.gov/gltf_embed/2391"
-            width="30%"
-            height="30%"
-            frameborder="0"
+            width="100%"
+            frameBorder="0"
             title="moon"
           />
           <h2>Enceladus</h2>

@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import styled from "styled-components";
 import logo from "../images/solar_system.svg";
 import bgimg from "../images/home_page_img.jpg";
+import { Link } from "react-router-dom";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -36,6 +37,9 @@ const Home = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <HomeTitle>Explore the Solar System</HomeTitle>
         <HomeSubTitle>Take a tour through the galaxy</HomeSubTitle>
+        <Link to="/testslideshow">
+          <button>Let's Go</button>
+        </Link>
       </HomeContainer>
       <Footer />
     </>

@@ -80,6 +80,7 @@ const AddData = ({ addPlanet }) => {
               id="name"
               name="name"
               value={planetData.name}
+              required
             />
           </div>
 
@@ -93,6 +94,7 @@ const AddData = ({ addPlanet }) => {
               id="mass"
               name="mass"
               value={planetData.mass}
+              required
             />
           </div>
 
@@ -106,6 +108,7 @@ const AddData = ({ addPlanet }) => {
               id="radius"
               name="radius"
               value={planetData.radius}
+              required
             />
           </div>
 
@@ -119,6 +122,7 @@ const AddData = ({ addPlanet }) => {
               id="period"
               name="period"
               value={planetData.period}
+              required
             />
           </div>
 
@@ -132,6 +136,7 @@ const AddData = ({ addPlanet }) => {
               id="semi_major_axis"
               name="semi_major_axis"
               value={planetData.semi_major_axis}
+              required
             />
           </div>
 
@@ -145,6 +150,7 @@ const AddData = ({ addPlanet }) => {
               id="temperature"
               name="temperature"
               value={planetData.temperature}
+              required
             />
           </div>
 
@@ -158,6 +164,7 @@ const AddData = ({ addPlanet }) => {
               id="distance_light_year"
               name="distance_light_year"
               value={planetData.distance_light_year}
+              required
             />
           </div>
 
@@ -171,6 +178,7 @@ const AddData = ({ addPlanet }) => {
               id="host_star_mass"
               name="host_star_mass"
               value={planetData.host_star_mass}
+              required
             />
           </div>
 
@@ -184,6 +192,7 @@ const AddData = ({ addPlanet }) => {
               id="host_star_temperature"
               name="host_star_temperature"
               value={planetData.host_star_temperature}
+              required
             />
           </div>
 
@@ -214,6 +223,7 @@ const AddData = ({ addPlanet }) => {
               id="satellites"
               name="satellites"
               value={planetData.satellites}
+              required
             />
           </div>
 
@@ -227,6 +237,7 @@ const AddData = ({ addPlanet }) => {
               id="img"
               name="img"
               value={planetData.img}
+              required
             />
           </div>
 
@@ -240,6 +251,7 @@ const AddData = ({ addPlanet }) => {
               id="fun_facts"
               name="fun_fact"
               value={planetData.fun_fact}
+              required
             />
           </div>
 
