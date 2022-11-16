@@ -8,10 +8,13 @@
   color: #fff;
   z-index: 2;
   position: absolute;
-  top: 2%;
-  left: 5%;
-  padding: 2rem;
-  width: 18rem;
+  top: 5%;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider {
@@ -59,24 +62,20 @@
 
 @media screen and (max-width: 1300px) {
   .planet-info {
-    width: 16rem;
+    width: 80%;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
   .planet-info {
-    width: 30rem;
     position: relative;
-    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
   .right-arrow {
     top: 25%;
   }
   .left-arrow {
     top: 25%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .planet-info {
-    position: relative;
   }
 }

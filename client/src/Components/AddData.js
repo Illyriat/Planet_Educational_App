@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import Footer from './Footer';
 import { postPlanetData } from './AddDataService';
 import './AddData.css';
+import swal from 'sweetalert';
 
 const AddData = ({addPlanet}) => {
 
@@ -19,7 +20,7 @@ const AddData = ({addPlanet}) => {
         body_type: "",
         satellites: "",
         img: "",
-        fun_facts: []
+        fun_fact: []
     });
 
     const onChange = (evt) =>{
@@ -33,24 +34,30 @@ const AddData = ({addPlanet}) => {
     const onSubmit = (evt) =>{
         evt.preventDefault();
         postPlanetData(planetData).then((data) =>{
-            addPlanet(data);
+            // addPlanet(data);
+            setPlanetData({
+                name: "",
+                mass: "",
+                radius: "",
+                period: "",
+                semi_major_axis: "",
+                temperature: "",
+                distance_light_year: "",
+                host_star_mass: "",
+                host_star_temperature: "",
+                body_type: "Choose a Body Type",
+                satellites: "",
+                img: "",
+                fun_fact: []
+            });
+            swal({
+                title: "Success!",
+                text: "Thank you! Your submission has been added to the data base",
+                icon: "success",
+                button: "Continue",
+            });
         })
-        //then resets form to empty input values
-        setPlanetData({
-            name: "",
-            mass: "",
-            radius: "",
-            period: "",
-            semi_major_axis: "",
-            temperature: "",
-            distance_light_year: "",
-            host_star_mass: "",
-            host_star_temperature: "",
-            body_type: "",
-            satellites: "",
-            img: "",
-            fun_facts: []
-        });
+       
     }
 
 
@@ -59,7 +66,7 @@ const AddData = ({addPlanet}) => {
         <>
             <Header />
 
-            <form onSubmit={onSubmit} id="planet-form" >
+            <form onSubmit={onSubmit} id="planet-form" method="POST" action="/success/">
                 <h2 className="add-title-data">Add a Planet: </h2>
                 <div className="formwarp">
                     <label htmlFor="name" className='data-text'>Name: </label>
@@ -68,102 +75,102 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="name"
                     name="name"
-                    defaultValue={planetData.name}
+                    value={planetData.name}
                     />
                 </div>
 
                 <div className='formwrap'>
                     <label htmlFor="mass" className='data-text'>Mass: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="mass"
                     name="mass"
-                    defaultValue={planetData.mass}
+                    value={planetData.mass}
                     />
                 </div>
 
                 <div className='formwrap'>
-                    <label htmlFor="radius" className='data-text'>Radius: </label>
+                    <label htmlFor="radius" className='data-text'>Radius (Km): </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="radius"
                     name="radius"
-                    defaultValue={planetData.radius}
+                    value={planetData.radius}
                     />
                 </div>
 
                 <div className='formwrap'>
-                    <label htmlFor="period" className='data-text'>Orbital Period: </label>
+                    <label htmlFor="period" className='data-text'>Orbital Period (days): </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="period"
                     name="period"
-                    defaultValue={planetData.period}
+                    value={planetData.period}
                     />
                 </div>
 
                 <div className='formwrap'>
                     <label htmlFor="semi_major_axis" className='data-text'>Axis: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="semi_major_axis"
                     name="semi_major_axis"
-                    defaultValue={planetData.semi_major_axis}
+                    value={planetData.semi_major_axis}
                     />
                 </div>
 
                 <div className='formwrap'>
-                    <label htmlFor="temperature" className='data-text'>Temperature: </label>
+                    <label htmlFor="temperature" className='data-text'>Temperature (Kelvin): </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="temperature"
                     name="temperature"
-                    defaultValue={planetData.temperature}
+                    value={planetData.temperature}
                     />
                 </div>
 
                 <div className='formwrap'>
-                    <label htmlFor="distance_light_years" className='data-text'>Distance In Light Years: </label>
+                    <label htmlFor="distance_light_year" className='data-text'>Distance In Light Years: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
-                    id="distance_light_years"
-                    name="distance_light_years"
-                    defaultValue={planetData.distance_light_years}
+                    id="distance_light_year"
+                    name="distance_light_year"
+                    value={planetData.distance_light_year}
                     />
                 </div>
 
                 <div className='formwrap'>
                     <label htmlFor="host_star_mass" className='data-text'>Host Star Mass: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="host_star_mass"
                     name="host_star_mass"
-                    defaultValue={planetData.host_star_mass}
+                    value={planetData.host_star_mass}
                     />
                 </div>
 
                 <div className='formwrap'>
-                    <label htmlFor="host_star_temperature" className='data-text'>Host Star Temperature: </label>
+                    <label htmlFor="host_star_temperature" className='data-text'>Host Star Temperature (Kelvin): </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="host_star_temperature"
                     name="host_star_temperature"
-                    defaultValue={planetData.host_star_temperature}
+                    value={planetData.host_star_temperature}
                     />
                 </div>
 
                 <div className='formwarp'>
-                    <label htmlFor='multi_select' className='data-text'>Body Type</label>
-                    <select name = "dropdown">
-                        <option value = "Planet" selected>Planet</option>
+                    <label htmlFor='multi_select' className='data-text'>Body Type: </label>
+                    <select onChange={onChange} name = "body_type" defaultValue={planetData.body_type}>
+                        <option value = "Planet">Planet</option>
                         <option value = "Dwarf_Planet">Dwarf Planet</option>
                         <option value = "Moon">Moon</option>
                         <option value = "Astriod">Astriod</option>
@@ -174,37 +181,37 @@ const AddData = ({addPlanet}) => {
                 <div className='formwrap'>
                     <label htmlFor="satellites" className='data-text'>Satellites: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="satellites"
                     name="satellites"
-                    defaultValue={planetData.satellites}
+                    value={planetData.satellites}
                     />
                 </div>
 
                 <div className='formwrap'>
                     <label htmlFor="img" className='data-text'>Add a link to an image here: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="img"
                     name="img"
-                    defaultValue={planetData.img}
+                    value={planetData.img}
                     />
                 </div>
 
                 <div className='formwrap'>
-                    <label htmlFor="fun_facts" className='data-text'>Tell us a fun fact!: </label>
+                    <label htmlFor="fun_fact" className='data-text'>Tell us a fun fact!: </label>
                     <input
-                    onchange={onChange}
+                    onChange={onChange}
                     type="text"
                     id="fun_facts"
-                    name="fun_facts"
-                    defaultValue={planetData.fun_facts}
+                    name="fun_fact"
+                    value={planetData.fun_fact}
                     />
                 </div>
 
-                <input type="submit" value="Save" id="save"/>
+                <input type="submit" value="Save" id="save" action="/success/" />
             </form>
             
             <Footer />

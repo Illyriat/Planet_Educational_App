@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Info = styled.div`
-  position: absolute;
-  top: 10%;
-  right: 10%;
   color: white;
+  width: 18%;
+  @media (max-width: 1300px) {
+    width: 25%;
+  } ;
 `;
 
 const InfoTitle = styled.h2`
