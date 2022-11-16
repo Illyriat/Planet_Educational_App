@@ -7,6 +7,7 @@ import InfoPanel from "../Components/InfoPanel";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./CarouselComponent.css";
 
+
 const PlanetTitle = styled.h1`
   font-size: 4rem;
   border-bottom: 2px solid #fff;
