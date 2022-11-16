@@ -4,6 +4,7 @@ import Fact from "../Components/Fact";
 import InfoPanel from "../Components/InfoPanel";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./CarouselComponent.css";
+import {Link} from "react-router-dom";
 
 const PlanetTitle = styled.h1`
   font-size: 4rem;
@@ -60,12 +61,34 @@ const Imageslider = ({ allPlanets }) => {
                   className="image"
                 />
 
-                <div key={planet._id} className="planet-info">
-                  <FactContainer>
-                    <div>
-                      <PlanetTitle>{planet.name}</PlanetTitle>
-                      <Description>{planet.description}</Description>
-                      <button value="More Info">More Info</button>
+
+      <section className="slider">
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        {allPlanets.map((planet, index) => {
+          return (
+            <>
+              <div
+                className={index === current ? "slide active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <>
+                    <img
+                      src={require("../images/" + planet.img)}
+                      alt=""
+                      className="image"
+                    />
+                    <div key={planet._id} className="planet-info">
+                      <div>
+                        <PlanetTitle>{planet.name}</PlanetTitle>
+                        <Description>{planet.description}</Description>
+                        <Link to = "/moreinfo">
+                        <button>More Info</button>
+                        </Link>
+                      </div>
+                      <Fact facts={planet.fun_fact} />
+
                     </div>
                     <Fact facts={planet.fun_fact} />
                   </FactContainer>

@@ -4,6 +4,7 @@ import Home from "../Components/Home";
 import CarouselComponent from "../Components/CarouselComponent";
 import SlideShow from "../Components/SlideShow";
 import AddData from "../Components/AddData";
+import MoreInfoComponent from "../Components/MoreInfoComponent";
 
 const PlanetContainer = () => {
   const [allPlanets, setAllPlanets] = useState([]);
@@ -41,6 +42,8 @@ const PlanetContainer = () => {
             element={<SlideShow allPlanets={allPlanets} />}
           />
           <Route path="/adddata" element={<AddData />} />
+          <Route path="/moreinfo" element={<MoreInfoComponent />} />
+
         </Routes>
       </Router>
     </>
