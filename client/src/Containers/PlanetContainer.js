@@ -43,6 +43,7 @@ const PlanetContainer = () => {
           />
           <Route path="/adddata" element={<AddData />} />
           <Route path="/moreinfo" element={<MoreInfoComponent />} />
+          
         </Routes>
       </Router>
     </>
