@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
 import Fact from "../Components/Fact";
 import InfoPanel from "../Components/InfoPanel";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
@@ -16,6 +14,13 @@ const PlanetTitle = styled.h1`
 
 const Description = styled.p`
   font-size: 1.2rem;
+`;
+
+const FactContainer = styled.div`
+  width: 18%;
+  @media (max-width: 1320px) {
+    width: 50%;
+  }
 `;
 
 const Imageslider = ({ allPlanets }) => {
@@ -38,50 +43,47 @@ const Imageslider = ({ allPlanets }) => {
   }
 
   return (
-    <>
-      <Header />
-
-      <section className="slider">
-        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-        {allPlanets.map((planet, index) => {
-          return (
-            <>
-              <div
-                className={index === current ? "slide active" : "slide"}
-                key={index}
-              >
-                {index === current && (
-                  <>
-                    <img
-                      src={require("../images/" + planet.img)}
-                      alt=""
-                      className="image"
-                    />
-                    <div key={planet._id} className="planet-info">
-                      <div>
-                        <PlanetTitle>{planet.name}</PlanetTitle>
-                        <Description>{planet.description}</Description>
-                        <button value="More Info">More Info</button>
-                      </div>
-                      <Fact facts={planet.fun_fact} />
-                    </div>
-                  </>
-                )}
-                <InfoPanel
-                  mass={planet.mass}
-                  temp={planet.temperature}
-                  radius={planet.radius}
-                  days={planet.period}
-                  satellites={planet.satellites}
+    <section className="slider">
+      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+      {allPlanets.map((planet, index) => {
+        return (
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && (
+              <>
+                <img
+                  src={require("../images/" + planet.img)}
+                  alt=""
+                  className="image"
                 />
-              </div>
-            </>
-          );
-        })}
-      </section>
-      <Footer />
-    </>
+
+                <div key={planet._id} className="planet-info">
+                  <FactContainer>
+                    <div>
+                      <PlanetTitle>{planet.name}</PlanetTitle>
+                      <Description>{planet.description}</Description>
+                      <button value="More Info">More Info</button>
+                    </div>
+                    <Fact facts={planet.fun_fact} />
+                  </FactContainer>
+
+                  <InfoPanel
+                    mass={planet.mass}
+                    temp={planet.temperature}
+                    radius={planet.radius}
+                    days={planet.period}
+                    satellites={planet.satellites}
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        );
+      })}
+    </section>
   );
 };
 
