@@ -63,13 +63,14 @@ const AddData = ({ addPlanet }) => {
 
       <div className="form-container">
         <form
+          className="form"
           onSubmit={onSubmit}
           id="planet-form"
           method="POST"
           action="/success/"
         >
           <h2 className="add-title-data">Add a Planet: </h2>
-          <div className="formwarp">
+          <div className="formwrap">
             <label htmlFor="name" className="data-text">
               Name:{" "}
             </label>
@@ -186,7 +187,7 @@ const AddData = ({ addPlanet }) => {
             />
           </div>
 
-          <div className="formwarp">
+          <div className="formwrap">
             <label htmlFor="multi_select" className="data-text">
               Body Type:{" "}
             </label>
@@ -242,7 +243,13 @@ const AddData = ({ addPlanet }) => {
             />
           </div>
 
-          <input type="submit" value="Save" id="save" action="/success/" />
+          <input
+            className="form-btn"
+            type="submit"
+            value="Save"
+            id="save"
+            action="/success/"
+          />
         </form>
       </div>
 
