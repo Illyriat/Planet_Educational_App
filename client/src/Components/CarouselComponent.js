@@ -4,6 +4,7 @@ import Fact from "../Components/Fact";
 import InfoPanel from "../Components/InfoPanel";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./CarouselComponent.css";
+import { Link } from "react-router-dom";
 
 const PlanetTitle = styled.h1`
   font-size: 4rem;
@@ -65,7 +66,9 @@ const Imageslider = ({ allPlanets }) => {
                     <div>
                       <PlanetTitle>{planet.name}</PlanetTitle>
                       <Description>{planet.description}</Description>
-                      <button value="More Info">More Info</button>
+                      <Link to="/moreinfo">
+                        <button>More Info</button>
+                      </Link>
                     </div>
                     <Fact facts={planet.fun_fact} />
                   </FactContainer>
