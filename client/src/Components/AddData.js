@@ -75,6 +75,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="name"
                     name="name"
+                    className="text-box"
                     value={planetData.name}
                     />
                 </div>
@@ -86,6 +87,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="mass"
                     name="mass"
+                    className="text-box"
                     value={planetData.mass}
                     />
                 </div>
@@ -97,6 +99,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="radius"
                     name="radius"
+                    className="text-box"
                     value={planetData.radius}
                     />
                 </div>
@@ -108,6 +111,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="period"
                     name="period"
+                    className="text-box"
                     value={planetData.period}
                     />
                 </div>
@@ -119,6 +123,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="semi_major_axis"
                     name="semi_major_axis"
+                    className="text-box"
                     value={planetData.semi_major_axis}
                     />
                 </div>
@@ -130,6 +135,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="temperature"
                     name="temperature"
+                    className="text-box"
                     value={planetData.temperature}
                     />
                 </div>
@@ -141,6 +147,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="distance_light_year"
                     name="distance_light_year"
+                    className="text-box"
                     value={planetData.distance_light_year}
                     />
                 </div>
@@ -152,6 +159,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="host_star_mass"
                     name="host_star_mass"
+                    className="text-box"
                     value={planetData.host_star_mass}
                     />
                 </div>
@@ -163,6 +171,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="host_star_temperature"
                     name="host_star_temperature"
+                    className="text-box"
                     value={planetData.host_star_temperature}
                     />
                 </div>
@@ -185,6 +194,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="satellites"
                     name="satellites"
+                    className="text-box"
                     value={planetData.satellites}
                     />
                 </div>
@@ -196,6 +206,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="img"
                     name="img"
+                    className="text-box"
                     value={planetData.img}
                     />
                 </div>
@@ -207,6 +218,7 @@ const AddData = ({addPlanet}) => {
                     type="text"
                     id="fun_facts"
                     name="fun_fact"
+                    className="fact-box"
                     value={planetData.fun_fact}
                     />
                 </div>

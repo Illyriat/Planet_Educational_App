@@ -5,4 +5,15 @@
 
 .data-text {
     color: white;
+    left: 2%;
+}
+
+.text-box {
+    size: 30rem;
+    left: 2%;
+}
+
+.fact-box {
+    align-items: center;
+    size: 30rem;
 }

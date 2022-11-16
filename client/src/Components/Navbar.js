@@ -30,6 +30,9 @@ const NavBar = () => {
       <ListItem>
         <StyledLink to="/adddata">Add Data</StyledLink>
       </ListItem>
+      <ListItem>
+        <StyledLink to="/moreinfocomponent">More Info</StyledLink>
+      </ListItem>
     </NavList>
   );
 };
