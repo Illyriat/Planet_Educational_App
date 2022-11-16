@@ -1,5 +1,3 @@
-import React, { useState} from 'react';
-import Header from "../Components/Header";
 import Footer from './Footer';
 import { postPlanetData } from './AddDataService';
 import './AddData.css';
