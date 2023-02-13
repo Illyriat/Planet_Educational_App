@@ -32,5 +32,7 @@ To run the application do the following:
     * To clone a repository using GitHub CLI, click GitHub CLI, then click the cliboard icon. 
     * Open Terminal.
     * Change the current working directory to the location where you want the cloned directory.
-    * Type git clone, and then paste the URL you copied earlier.
+    * Type **git clone**, and then paste the URL you copied earlier.
     * Press Enter to create your local clone.
+ 3. Navigate the directory where you have cloned the repository. In your terminal type the cmd **npm i** to install the dependancies required for the application.
+ 4. Type **cd server** into terminal to navigate to the server directory. Then type **npm run seeds** to populate the data required to run the application.
