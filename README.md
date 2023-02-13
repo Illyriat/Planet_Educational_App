@@ -30,3 +30,6 @@ To run the application do the following:
     * To clone the repository using HTTPS, under "HTTPS", click the cliboard icon.
     * To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click the cliboard icon .
     * To clone a repository using GitHub CLI, click GitHub CLI, then click the cliboard icon. 
+    * Open Terminal.
+    * Change the current working directory to the location where you want the cloned directory.
+    * Type git clone, and then paste the URL you copied earlier.
