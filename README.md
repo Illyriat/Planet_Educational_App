@@ -1,6 +1,6 @@
 # BBC Planet_Educational_App
 
-![alt-text](https://github.com/Illyriat/Planet_Educational_App/blob/main/Planet_app.gif)
+<img src="[https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://github.com/Illyriat/Planet_Educational_App/blob/main/Planet_app.gif)" width="40" height="40" />
 
 ## Group project
 
