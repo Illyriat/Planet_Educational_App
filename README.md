@@ -17,4 +17,4 @@ We began by setting up a Trello board where we could split the requirements of t
 #Design
 The finsihed product should be easy to navigate with clear call to actions and sign post for how to use the application effectively. Each button should give the user lear visual clues of what each section of the application does with clear sigt navigation at the top to allow the user to effectively navigate through each section of content.
 
-<img src="https://github.com/Illyriat/Planet_Educational_App/blob/main/Planets_screenshots.jpg"
+<img src="https://github.com/Illyriat/Planet_Educational_App/blob/main/Planets_screenshots.jpg">
