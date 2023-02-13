@@ -20,3 +20,5 @@ The finsihed product should be easy to navigate with clear call to actions and s
 <img src="https://github.com/Illyriat/Planet_Educational_App/blob/main/Planets_screenshots.jpg">
 
 One of the main requiremnts for this project is that we wanted the layout to be responsnsive across a wide range of devices and viewports. We implemented CSS flexbox and Media Queries to allow the design to adapt and change dimensions when the user scale device dimensions.
+
+<img src="https://github.com/Illyriat/Planet_Educational_App/blob/main/mobile_planets..jpg">
