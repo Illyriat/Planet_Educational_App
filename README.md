@@ -22,3 +22,11 @@ The finsihed product should be easy to navigate with clear call to actions and s
 One of the main requiremnts for this project is that we wanted the layout to be responsnsive across a wide range of devices and viewports. We implemented CSS flexbox and Media Queries to allow the design to adapt and change dimensions when the user scale device dimensions.
 
 <img src="https://github.com/Illyriat/Planet_Educational_App/blob/main/mobile_planets..jpg">
+
+# How to use the application
+To run the application do the following:
+1. Fork the application by clicking on the Fork button at the top right of the screen.
+2. Clone the repository by clicking on the green code button.
+    * To clone the repository using HTTPS, under "HTTPS", click the cliboard icon.
+    * To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click the cliboard icon .
+    * To clone a repository using GitHub CLI, click GitHub CLI, then click the cliboard icon. 
