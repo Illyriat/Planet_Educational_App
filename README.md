@@ -36,3 +36,7 @@ To run the application do the following:
     * Press Enter to create your local clone.
  3. Navigate the directory where you have cloned the repository. In your terminal type the cmd **npm i** to install the dependancies required for the application.
  4. Type **cd server** into terminal to navigate to the server directory. Then type **npm run seeds** to populate the data required to run the application.
+ 5. You should see the data being loaded in the terminal.
+ 6. Type the cmd **npm run server:dev** to start up the srever for the application. If successful you will see **Listening on port 9000** displayed int the terminal.
+ 7. Open up another tab in the terminal by clicking in the plus icon on the top right of the terminal(mac). Type **../** to move back into the main directory **Planet_Education_app**
+ 8. 
