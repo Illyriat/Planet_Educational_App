@@ -1,5 +1,7 @@
 # BBC Planet_Educational_App
 
+![alt-text](https://github.com/Illyriat/Planet_Educational_App/blob/main/Planet_app.gif)
+
 ## Group project
 
 ## Introduction
