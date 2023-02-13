@@ -11,3 +11,5 @@ The brief for this project was to develop an interactive software application fo
 
 # Planning 
 We began by setting up a Trello board where we could split the requirements of the project up into manageable sections and defining user stories that would allow us to complete the project in the given timeframe. We then moved on to creating wireframe to allow us to visualise the required component architecture that we would need to build in order to complete the application.
+
+<img src="https://github.com/Illyriat/Planet_Educational_App/blob/main/Planet%20wireframes.png">
