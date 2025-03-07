@@ -1,5 +1,7 @@
 # BBC Planet_Educational_App
 
+[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,mongodb,express)](https://skillicons.dev)
+
 ## Group project
 
 ## Introduction
